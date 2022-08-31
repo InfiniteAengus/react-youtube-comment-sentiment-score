@@ -5,7 +5,6 @@ import React, { useContext } from 'react';
 const Header = () => {
   const [progress] = useContext(AppContext);
   return (
-    // <header style={{ boxShadow: '0 0 15px rgba(20, 20, 20, .3)' }}>
     <AppBar
       sx={{
         backgroundColor: 'white',
@@ -15,6 +14,7 @@ const Header = () => {
       }}
       elevation={3}
     >
+      {/* {progress} */}
       {progress !== 0 && progress !== 100 && (
         <LinearProgress
           variant='determinate'
@@ -33,7 +33,6 @@ const Header = () => {
         <img src='/images/logo.png' alt='logo' />
       </Container>
     </AppBar>
-    // </header>
   );
 };
 
