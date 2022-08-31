@@ -22,12 +22,6 @@ const VideoCard = (props: VideoCardProps) => {
     >
       <CardMedia
         component='img'
-        sx={
-          {
-            // width: videoInfo?.thumbnails?.high.width + 'px',
-            // height: videoInfo?.thumbnails?.high.height + 'px',
-          }
-        }
         image={
           imageUrl ??
           'https://pdtxar.com/wp-content/uploads/2019/11/video-placeholder-1280x720-40-768x433.jpg'
