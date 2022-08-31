@@ -1,10 +1,20 @@
+import { Container } from '@mui/material';
+import Header from './Header';
+
 type Props = {
-  title: string;
+  title?: string;
   children: React.ReactChild;
 };
 
-const MainLayout: React.FC<Props> = ({ title, children }) => {
-  return <main>{children}</main>;
+const MainLayout: React.FC<Props> = ({ title = 'Test App', children }) => {
+  return (
+    <>
+      <Header />
+      <main style={{ padding: '30px 0' }}>
+        <Container>{children}</Container>
+      </main>
+    </>
+  );
 };
 
 export default MainLayout;
